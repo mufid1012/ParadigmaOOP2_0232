@@ -2,7 +2,8 @@
 using namespace std;
 
 class seseorang {
-    virtual void pesan() = 0; 
+public:
+    virtual void pesan() = 0;
 };
 
 class joko :public seseorang {
@@ -18,3 +19,15 @@ public:
         cout << "Pesan dari lia" << endl;
     }
 };
+
+int main () {
+    seseorang* obyek;
+    joko a;
+    lia b;
+
+    obyek = &a;
+    obyek->pesan();
+    obyek = &b;
+    obyek->pesan();
+    return;
+}
