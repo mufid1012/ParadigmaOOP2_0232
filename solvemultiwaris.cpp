@@ -12,3 +12,14 @@ public:
         cout << "Orang dibuat dengan umur " << umur << "\n" << endl;
     }
 };
+
+class Pekerja : public Orang
+{
+public:
+
+    Pekerja(int pUmur) :
+        Orang(pUmur)
+    {
+        cout << "Pelajar dibuat\n" << endl;
+    }
+};
